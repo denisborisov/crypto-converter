@@ -8,9 +8,9 @@ from fastapi import Query
 
 
 class CurrencyPairGetRequest(pydantic.BaseModel):
-    base_currency: str = pydantic.Field(Query(...))
-    quote_currency: str = pydantic.Field(Query(...))
-    desired_timestamp: datetime.datetime | None = None
+    base_currency: str = pydantic.Field(Query(..., example="LTC"))
+    quote_currency: str = pydantic.Field(Query(..., example="BTC"))
+    desired_timestamp: datetime.datetime | None = pydantic.Field(Query(None, example="2024-11-24T12:00:00Z"))
 
     model_config: typing.ClassVar = {
         "json_schema_extra": {
