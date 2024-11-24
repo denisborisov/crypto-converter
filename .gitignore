@@ -1,0 +1,11 @@
+# directories
+__pycache__/
+.mypy_cache/
+.venv/
+.vscode/
+reports/
+
+# files
+.coverage
+coverage.xml
+.DS_Store

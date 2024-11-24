@@ -1,0 +1,11 @@
+# Ignore everything
+**
+
+# Except for dependencies and source
+!/.venv/**
+!/alembic/**
+!/alembic.ini
+!/Dockerfile
+!/poetry.lock
+!/pyproject.toml
+!/src/**
