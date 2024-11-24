@@ -70,3 +70,11 @@ FastAPI was chosen as the target web framework, in that
 
 Python 3.13 was chosen because
 - it it the latest version of Python
+
+## Possible improvements
+
+The solution lack some features and may be improved further:
+- leverage external dependency injection libraries in order to create singletons for our adapters
+  - We usually do this with 'dependency-injector' on my current job. Nevertheless it doesn't work well with Python 12+. We may look at 'dependency-injector-fork', 'fresh-bakery', and 'that-depends', though. It would be nice if you share your tool for this purpose and your approach.
+- add extended logging mechanisms
+- add supplementary endpoints for K8s probes and for Prometheus monitoring
